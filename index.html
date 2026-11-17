@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>videomuck</title>
+        <style>
+            #message {
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                background-color: rgba(255, 213, 59, 0.292);
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <iframe src="https://youtu.be/87e-CfN6b4o?si=SCdjCKaVaKFkCANx" width="100%" height="100%"></iframe> -->
+        <span>OUTPUT:</span><span id="message">___</span>
+
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BntIinjPNRw?si=PZfiPLYJRT5IYqRN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  -->
+
+        <script>
+            if (window.max) {
+               console.log("This webpage is loaded in Max, from a jweb object");
+               document.getElementById("message").innerHTML="This webpage is loaded in Max, from a jweb object";
+            } else {
+                console.log("This webpage is not loaded in Max.");
+                document.getElementById("message").innerHTML="This webpage is not loaded in Max.";
+            }
+
+            window.max.bindInlet("foo", (args) => {
+                window.max.outlet(`got foo with ${args}`);
+                document.getElementById("message").innerHTML=args;
+            });
+        </script>
+    </body>
+</html>
