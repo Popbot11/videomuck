@@ -2,8 +2,8 @@
     "name": "videomuck",
     "version": 1,
     "creationdate": 3875967308,
-    "modificationdate": 3875967392,
-    "viewrect": [ 25.0, 106.0, 300.0, 500.0 ],
+    "modificationdate": 3877960483,
+    "viewrect": [ 649.0, 327.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
     "showdependencies": 1,
@@ -15,7 +15,8 @@
                 "local": 1,
                 "toplevel": 1
             }
-        }
+        },
+        "externals": {        }
     },
     "layout": {    },
     "searchpath": {    },
