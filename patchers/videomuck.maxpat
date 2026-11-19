@@ -9,8 +9,22 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 442.0, 210.0, 975.0, 996.0 ],
+        "rect": [ 442.0, 210.0, 900.0, 996.0 ],
         "boxes": [
+            {
+                "box": {
+                    "fontname": "Chiller",
+                    "fontsize": 24.0,
+                    "id": "obj-19",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 621.0, 757.6746987951808, 236.0, 90.0 ],
+                    "text": "<-- OUTPUT FROM WEBPAGE LOADED IN MAX (assuming custom js allows)",
+                    "textcolor": [ 0.3607843137254902, 1.0, 0.12549019607843137, 1.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-35",
@@ -42,28 +56,6 @@
                     "numoutlets": 0,
                     "patching_rect": [ 48.14814814814815, 48.148148148148145, 152.0, 117.0 ],
                     "text": "what capabillities does the youtube API give me? I've never actually used a javascript API so this is new territory. will other people be able to load it? do i need a dynamic page instead of a static one? "
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-26",
-                    "linecount": 4,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 590.3703703703703, 214.07407407407405, 150.0, 62.0 ],
-                    "text": "i have been testing running this with a local server, this address wont work"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-23",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 589.156626506024, 180.74074074074073, 150.0, 20.0 ],
-                    "text": "NOTE:",
-                    "textcolor": [ 1.0, 0.0, 0.0, 1.0 ]
                 }
             },
             {
@@ -118,7 +110,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 263.855421686747, 846.9879518072289, 206.66666666666666, 22.0 ],
-                    "text": "title Error"
+                    "text": "title videomuck"
                 }
             },
             {
@@ -137,7 +129,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 687.9518072289156, 787.9518072289158, 32.0, 22.0 ],
+                    "patching_rect": [ 583.132530120482, 763.0, 32.0, 22.0 ],
                     "text": "print"
                 }
             },
@@ -148,8 +140,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 589.1566265060242, 279.51807228915663, 235.0, 22.0 ],
-                    "text": "read http://127.0.0.1:5500/other/index.html"
+                    "patching_rect": [ 559.132530120482, 245.0, 264.0, 22.0 ],
+                    "text": "read https://popbot11.github.io/videomuck/other/"
                 }
             },
             {
@@ -1173,7 +1165,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 19.0, 62.0, 817.0, 736.0 ],
                     "rendermode": 2,
-                    "url": "http://127.0.0.1:5500/index.html"
+                    "url": "https://popbot11.github.io/videomuck/other/"
                 }
             }
         ],
